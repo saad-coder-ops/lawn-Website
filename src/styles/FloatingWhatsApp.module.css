@@ -1,0 +1,39 @@
+.floating {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: linear-gradient(135deg, #1d8e48, #24b95d);
+  color: #fff;
+  padding: 0.72rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 16px 30px rgba(24, 114, 58, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 35px rgba(24, 114, 58, 0.42);
+}
+
+.floating svg {
+  font-size: 1.15rem;
+}
+
+@media (max-width: 700px) {
+  .floating span {
+    display: none;
+  }
+
+  .floating {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}

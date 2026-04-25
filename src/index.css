@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+:root {
+  --site-bg: #f5f0e6;
+  --bg: #eef6ec;
+  --bg-soft: #f7fbf6;
+  --surface: #ffffff;
+  --text: #24412d;
+  --heading: #153120;
+  --muted: #5f7565;
+  --primary: #1f7a42;
+  --primary-dark: #155b30;
+  --line: #d6e3d8;
+  --earth: #d9c7a2;
+  --shadow: 0 14px 40px rgba(16, 56, 29, 0.08);
+}
+
+[data-theme='dark'] {
+  --site-bg: #0f1a13;
+  --bg: #0f1a13;
+  --bg-soft: #15241a;
+  --surface: #1a2b20;
+  --text: #d8e8dc;
+  --heading: #ecf8ef;
+  --muted: #98b39f;
+  --primary: #49b973;
+  --primary-dark: #2c8d53;
+  --line: #2e4737;
+  --earth: #a48f66;
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--site-bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.2;
+  color: var(--heading);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

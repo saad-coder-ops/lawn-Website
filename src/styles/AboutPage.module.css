@@ -1,0 +1,45 @@
+.wrapper {
+  margin-top: 1rem;
+}
+
+.grid {
+  margin-top: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.grid article,
+.choice {
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 1.4rem;
+}
+
+.grid h3,
+.choice h3 {
+  margin-bottom: 0.55rem;
+}
+
+.grid p {
+  color: var(--muted);
+}
+
+.choice {
+  margin-top: 1rem;
+}
+
+.choice ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.45rem;
+  color: var(--muted);
+}
+
+@media (max-width: 740px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
